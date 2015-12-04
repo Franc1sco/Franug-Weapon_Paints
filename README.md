@@ -1,10 +1,17 @@
 Installation:
  
+ 
 Upload .cfg file to addons/sourcemod/configs
+
 Upload .smx file from the zip to addons/sourcemod/plugins
+
 Upload .phrases.txt file to addons/sourcemod/translations
+
 Add a entry called "weaponpaints" to addons/sourcemod/configs/databases.cfg
+
+
 You dont need to upload the .sp file
+
 
 If you already use a old version. Remove your database content and start since 0
 
@@ -25,6 +32,8 @@ sm_weaponpaints_rmenu "1" // Re-open the menu when you select a option. 1 = enab
 sm_weaponpaints_onlyadmin "0" // This feature is only for admins. 1 = enabled, 0 = disabled.
 
 sm_weaponpaints_zombiesv "0" // Enable this for prevent crashes in zombie and 1v1 servers for knifes. 1 = enabled, 0 = disabled.
+
+
 
 
 Recommendations: dont advertise the plugin in sv_tags and use it only for admins
