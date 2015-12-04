@@ -1,0 +1,236 @@
+﻿"Phrases"
+{
+        "Menu title 1"
+        {
+		"en"		"Choose a paint for your weapon"
+		"es"		"Selecciona una pintura para tu arma"
+		"fr"		"Selectionnez une peinture pour votre arme"
+		"ru"        "Выберите раскраску для своего оружия"
+		"pl"		"Wybierz farbę dla swojej broni"
+		"ro"		"Alege o culoare pentru arma ta"
+		"pt"		"Escolhe uma pintura para a tua arma"
+		"tr"		"Silahın boyasını değiştirebilirsiniz."
+		"ptbr"		"Escolha uma camuflagem para sua arma"
+		"de"		"Wähle eine Tarnung für deine Waffe"
+        }
+        "Weapon paints reloaded"
+        {
+		"en"		"Weapon paints reloaded"
+		"es"		"Pintura de armas recargada"
+		"fr"		"Peinture de l'arme mis à jour"
+		"ru"        "Раскраска оружия обновлена"
+		"pl"		"Weapon paints przeładowane"
+		"ro"		"Culoarea armei a fost încărcată"
+		"pt"		"Pintura de armas recarregada"
+		"tr"		"Silah boyaları yenilendi."
+		"ptbr"		"Camuflagens recarregadas"
+		"de"		"Tarnungen neu geladen"
+        }
+        "You cant use this when you are dead"
+        {
+		"en"		"You cant use this when you are dead"
+		"es"		"No puedes usar esto cuando estas muerto"
+		"fr" 		"Vous ne pouvez l'utiliser quand vous etes mort"
+		"ru"        "Вы не можете использовать раскраску когда вы мертвы"
+		"pl"		"Nie możesz używać tego, kiedy jesteś martwy"
+		"ro"		"Nu poți utiliza când ești mort"
+		"pt"		"Nao podes usar isto enquanto morto"
+		"tr"		"Ölüyken kullanamassınız."
+		"ptbr"		"Nao pode usar isso enquanto estiver morto"
+		"de"		"Du kannst dies nicht benutzen wenn du tot bist"
+        }
+        "You cant use this when you are in a lastrequest"
+        {
+		"en"		"You cant use this when you are in a lastrequest"
+		"es"		"No puedes usar esto cuando estas en ultimo deseo"
+		"fr"		"Vous ne pouvez l'utiliser quand vous etes en dernière requete"
+		"ru"        "Вы не можете использовать раскраску, когда вы находитесь в последнем запросе"
+		"pl"		"Nie możesz używać tego gdy jesteś w lastrequest"
+		"ro"		"Nu poți utiliza în timpul ultimei cerințe"
+		"pt"		"Nao podes usar isto no ultimo pedido"
+		"tr"		"Son isteğiniz uygulanmadan kullanamassınız"
+		"ptbr"		"Nao pode usar isso no ultimo pedido"
+		"de"		"Du kannst dies nicht während eines LastRequest benutzen"
+        }
+        "You cant use a paint in this weapon"
+        {
+		"en"		"You cant use a paint in this weapon"
+		"es"		"No puedes usar una pintura en este arma"
+		"fr"		"Vous ne pouvez utiliser une peinture pour cette arme"
+		"ru"        "Вы не можете использовать раскраску на этом оружии"
+		"pl"		"Nie można użyć farby w tej broni"
+		"ro"		"Nu poți utiliza o culoare pe această armă"
+		"pt"		"Nao podes usar uma pintura nesta arma"
+		"tr"		"Bu silaha bu boyayı kullanamassınız"
+		"ptbr"		"Camuflagem incompativel para esta arma"
+		"de"		"Dies ist nicht mit deiner Waffe verwendbar"
+        }
+        "You have choose your default paint for your"
+        {
+		"#format"	"{1:s}"
+		"en"		"You have choose{purple} your default paint {default}for your{purple} {1}"
+		"es"		"Has elegido{purple} tu pintura por defecto {default}para tu{purple} {1}"
+		"fr"		"Vous avez choisi{purple} votre peinture par defaut {default}pour votre{purple} {1}"
+		"ru"        "Вы выбрали{purple} стандартную раскраску {default}для вашего{purple} {1}"
+		"pl"		"Wybrałeś{purple} domyślną farbę {default}dla twojego{purple} {1}"
+		"ro"		"Ai ales{purple} culoarea ta standard {default}pentru tine{purple} {1}"
+		"pt"		"Escolhes-te{purple} a tua pintura predefinida {default} para a tua{purple} {1}"
+		"tr"		"Burdan{purple} normal boyaya {default} geçebilirsiniz{purple} {1}"
+		"ptbr"		"Voce escolheu{purple} a camuflagem padrao {default} para a {purple} {1}"
+		"de"		"Du hast die normale Tarnung für deine {purple}{1} {default} ausgewählt"
+        }
+        "You have choose a random paint for your"
+        {
+		"#format"	"{1:s}"
+		"en"		"You have choose{purple} a random paint {default}for your{purple} {1}"
+		"es"		"Has elegido{purple} una pintura aleatoria {default}para tu{purple} {1}"
+		"fr"		"Vous avez choisi{purple} une peinture aléatoir {default}pour votre{purple} {1}"
+		"ru"        "Вы выбрали{purple} случайную раскраску {default}для вашего{purple} {1}"
+		"pl"		"Wybrałeś{purple} Losową Farbę {default}dla twojego{purple} {1}"
+		"ro"		"Au ales{purple} culoare aleatorie {default}pentru tine{purple} {1}"
+		"pt"		"Escolhes-te{purple} uma pintura aleatoria {default}para a tua{purple} {1}"
+		"tr"		"Burdan{purple} rasgele silah boyası {default}seçebilirsiniz.{purple} {1}"
+		"ptbr"		"Voce escolheu{purple} uma camuflagem aleatoria {default}para a {purple} {1}"
+		"de"		"Du hast eine {purple}Zufallstarnung{default} für deine {purple}{1} {default} ausgewählt"
+        }
+        "You have choose a weapon"
+        {
+		"#format"	"{1:s},{2:s}"
+		"en"		"You have choose{purple} {1} {default}for your{purple} {2}"
+		"es"		"Has elegido{purple} {1} {default}para tu{purple} {2}"
+		"fr"		"Vous avez choisi{purple} {1} {default}pour votre{purple} {2}"
+		"ru"        "Вы выбрали{purple} {1} {default}для вашего{purple} {2}"
+		"pl"		"Wybrałeś{purple} {1} {default}dla twojego{purple} {2}"
+		"ro"		"Ai ales{purple} {1} {default}pentru tine{purple} {2}"
+		"pt"		"Escolhes-te{purple} {1} {default}para a tua{purple} {2}"
+		"tr"		"Silah{purple} {1} {default}boyanız değiştirildi.{purple} {2"
+		"ptbr"		"Voce escolheu{purple} {1} {default}para a {purple} {2}"
+		"de"		"Du hast {purple}{1} {default} für deine {purple}{2} {default}ausgewählt"
+        }
+        "You can use this command only the first seconds"
+        {
+		"#format"	"{1:i}"
+		"en"		"You can use this command only the first{purple} {1} {default}seconds of the round"
+		"es"		"Solo puedes usar este comando los primeros{purple} {1} {default}segundos de la ronda"
+		"de"		"Du kannst das nur die ersten{purple}{1} {default}Sekunden machen"
+		"tr"		"Bu Komutu sadece ilk saniyelerde{purple} {1} {default}kullanabilirsiniz."
+		"fr"		"Vous pouvez utiliser cette commande uniquement dans les premieres secondes du round"
+		"pt"		"Podes usar este comando nos primeiros{purple} {1} {default}segundos da ronda"
+		"pl"		"Możesz użyć tego polecenia tylko pierwszych{purple} {1} {default}sekundach w tej rundzie"
+		"ru"		"Вы можете использовать эту команду только в течении{purple} {1} {default}секунд с начала раунда"
+        }
+        "Random paint"
+        {
+		"en"		"Random paint"
+		"es"		"Pintura aleatoria"		
+		"de"		"Zufall"
+		"pl"		"Losowe farby"
+		"pt"		"Pintura aleatoria"
+		"fr"		"Peinture aleatoire"
+		"tr"		"Rasgele boya"
+		"ru"		"Случайная раскраска"
+        }
+        "Default paint"
+        {
+		"en"		"Default paint"
+		"es"		"Pintura por defecto"	
+		"de"		"Standard"
+		"pl"		"Farba Normalna"
+		"pt"		"Pintura por defeito"
+		"fr"		"Peinture par defaut"
+		"tr"		"Normal boya"
+		"ru"		"Стандартная раскраска"
+        }
+        "Paint not found"
+        {
+		"en"		"Paint not found for this weapon"
+		"es"		"No se ha encontrado pintura para esta arma"		
+		"de"		"Tarnung für diese Waffe nicht gefunden"
+		"pl"		"Farba nie działa dla tej broni"
+		"pt"		"Pintura nao encontrada para esta arma"
+		"fr"		"Peinture non trouve pour cette arme"
+		"tr"		"Boya bulunamadı"
+		"ru"		"Раскраска для этого оружия не найдена"
+        }
+        "Paint found"
+        {
+		"#format"	"{1:s}"
+		"en"		"The paint of this weapon is{purple} {1}"
+		"es"		"La pintura de este arma es{purple} {1}"		
+		"de"		"Die aktuelle Tarnung ist{purple} {1}"
+		"pl"		"Farba tej broni jest{purple} {1}"
+		"pt"		"Pintura escolhida{purple} {1}"
+		"fr"		"La peinture de cette arme est{purple} {1}"
+		"tr"		"Silahınıza boya eklendi{purple} {1}"
+		"ru"		"Раскраска этого оружия{purple} {1}"
+        }
+        "Menu title 2"
+        {
+		"#format"	"{1:s}"
+		"en"		"Weapon Paints [{1} private version]"
+		"es"		"Pintura de Armas [{1} version privada]"
+        }
+        "Select paint for the current weapon"
+        {
+		"en"		"Select paint for the current weapon"
+		"es"		"Selecciona pintura para tu arma actual"
+        }
+        "Select paint for each weapon"
+        {
+		"en"		"Select paint for each weapon"
+		"es"		"Selecciona pintura para cada arma"
+        }
+
+        "Favorite paints menu"
+        {
+		"en"		"Favorite paints menu"
+		"es"		"Menu de pinturas favoritas"
+        }
+        "Add a favorite paint"
+        {
+		"en"		"Add new favorite paint"
+		"es"		"Agregar nueva pintura favorita"
+        }
+        "Remove a favorite paint"
+        {
+		"en"		"Remove a favorite paint"
+		"es"		"Borrar una pintura favorita"
+        }
+        "Available favorite paint slot"
+        {
+		"en"		"Available favorite paint slot"
+		"es"		"Ranura de pintura favorita disponible"
+        }
+        "Add a favorite paint"
+        {
+		"en"		"Add new favorite paint"
+		"es"		"Agregar nueva pintura favorita"
+        }
+        "Remove a favorite paint"
+        {
+		"en"		"Remove a favorite paint"
+		"es"		"Borrar una pintura favorita"
+        }
+        "You added a favorite paint"
+        {
+		"#format"	"{1:s}"
+		"en"		"You added {purple}{1} {default}to your favorite paints"
+		"es"		"Tu has agregado {purple}{1} {default}a tus pinturas favoritas"
+        }
+        "You removed a favorite paint"
+        {
+		"#format"	"{1:s}"
+		"en"		"You removed {purple}{1} {default}from your favorite paints"
+		"es"		"Tu has borrado {purple}{1} {default}de tus pinturas favoritas"
+        }
+        "Select a paint from your favorites"
+        {
+		"en"		"Select a paint from your favorites"
+		"es"		"Selecciona una pintura de tus favoritas"
+        }
+        "You dont have access to this paint"
+        {
+		"en"		"You dont have access to this paint"
+		"es"		"Tu no tienes acceso a esta pintura"
+        }
+}
