@@ -61,8 +61,8 @@ new ismysql;
 new Handle:array_paints;
 new Handle:array_armas;
 
-#define DATA "2.8 public version"
-#define DATA2 "2.8"
+#define DATA "2.8.1 public version"
+#define DATA2 "2.8.1"
 
 //new String:base[64] = "weaponpaints";
 
@@ -703,7 +703,7 @@ public DIDMenuHandler(Handle:menu, MenuAction:action, client, itemNum)
 					}
 					
 					decl String:buffer[1024], String:nombres[64];
-					if(theindex == 0) Format(nombres, sizeof(nombres), "random");
+					if(theindex == -1) Format(nombres, sizeof(nombres), "default");
 					else Format(nombres, sizeof(nombres), g_paints[theindex][Nombre]);
 					decl String:steamid[32];
 					GetClientAuthId(client, AuthId_Steam2,  steamid, sizeof(steamid) );
@@ -751,7 +751,7 @@ public DIDMenuHandler(Handle:menu, MenuAction:action, client, itemNum)
 			else 
 			{
 				decl String:buffer[1024], String:nombres[64];
-				if(theindex == 0) Format(nombres, sizeof(nombres), "random");
+				if(theindex == -1) Format(nombres, sizeof(nombres), "default");
 				else Format(nombres, sizeof(nombres), g_paints[theindex][Nombre]);
 				decl String:steamid[32];
 				GetClientAuthId(client, AuthId_Steam2,  steamid, sizeof(steamid) );
