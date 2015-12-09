@@ -167,8 +167,8 @@
         "Menu title 2"
         {
 		"#format"	"{1:s}"
-		"en"		"Weapon Paints [{1} private version]"
-		"es"		"Pintura de Armas [{1} version privada]"
+		"en"		"Weapon Paints [{1} public version]"
+		"es"		"Pintura de Armas [{1} version publica]"
         }
         "Select paint for the current weapon"
         {
