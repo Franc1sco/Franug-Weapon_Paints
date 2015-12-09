@@ -61,8 +61,8 @@ new ismysql;
 new Handle:array_paints;
 new Handle:array_armas;
 
-#define DATA "2.8.1 public version"
-#define DATA2 "2.8.1"
+#define DATA "2.8.2 public version"
+#define DATA2 "2.8.2"
 
 //new String:base[64] = "weaponpaints";
 
@@ -714,8 +714,10 @@ public DIDMenuHandler(Handle:menu, MenuAction:action, client, itemNum)
 				}
 				
 				//ChangePaint(client, windex, Classname, weaponindex, true);
-				Restore(client, windex, Classname, weaponindex);
-				FakeClientCommand(client, "use %s", Classname);
+				decl String:Classname2[64];
+				Format(Classname2, 64, "weapon_%s", Classname);
+				Restore(client, windex, Classname2, weaponindex);
+				FakeClientCommand(client, "use %s", Classname2);
 				if(theindex == -1) CPrintToChat(client, " {green}[WP]{default} %T","You have choose your default paint for your",client, Classname);
 				else if(theindex == 0) CPrintToChat(client, " {green}[WP]{default} %T","You have choose a random paint for your",client, Classname);
 				else CPrintToChat(client, " {green}[WP]{default} %T", "You have choose a weapon",client, g_paints[theindex][Nombre], Classname);
