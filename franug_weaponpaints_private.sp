@@ -61,8 +61,8 @@ new ismysql;
 new Handle:array_paints;
 new Handle:array_armas;
 
-#define DATA "2.8 public version"
-#define DATA2 "2.8"
+#define DATA "2.7 private version"
+#define DATA2 "2.7"
 
 //new String:base[64] = "weaponpaints";
 
@@ -108,8 +108,8 @@ public OnPluginStart()
 	cvar_saytimer = CreateConVar("sm_weaponpaints_saytimer", "10", "Time in seconds for block that show the plugin commands in chat when someone type a command. -1.0 = never show the commands in chat");
 	cvar_rtimer = CreateConVar("sm_weaponpaints_roundtimer", "20", "Time in seconds roundstart for can use the commands for change the paints. -1.0 = always can use the command");
 	cvar_rmenu = CreateConVar("sm_weaponpaints_rmenu", "1", "Re-open the menu when you select a option. 1 = enabled, 0 = disabled.");
-	cvar_onlyadmin = CreateConVar("sm_weaponpaints_onlyadmin", "1", "This feature is only for admins. 1 = enabled, 0 = disabled.");
-	cvar_zombiesv = CreateConVar("sm_weaponpaints_zombiesv", "1", "Enable this for prevent crashes in zombie servers. 1 = enabled, 0 = disabled.");
+	cvar_onlyadmin = CreateConVar("sm_weaponpaints_onlyadmin", "0", "This feature is only for admins. 1 = enabled, 0 = disabled.");
+	cvar_zombiesv = CreateConVar("sm_weaponpaints_zombiesv", "0", "Enable this for prevent crashes in zombie servers. 1 = enabled, 0 = disabled.");
 	
 	g_c4 = GetConVarBool(cvar_c4);
 	g_saytimer = GetConVarInt(cvar_saytimer);
@@ -134,167 +134,164 @@ public OnPluginStart()
 	
 	array_armas = CreateArray(128);
 	
-	Format(Items, 64, "negev");
+	Format(Items, 64, "weapon_negev");
 	//Format(Items[desc], 64, "Negev");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "m249");
+	Format(Items, 64, "weapon_m249");
 	//Format(Items[desc], 64, "M249");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "bizon");
+	Format(Items, 64, "weapon_bizon");
 	//Format(Items[desc], 64, "PP-Bizon");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "p90");
+	Format(Items, 64, "weapon_p90");
 	//Format(Items[desc], 64, "P90");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "scar20");
+	Format(Items, 64, "weapon_scar20");
 	//Format(Items[desc], 64, "SCAR-20");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "g3sg1");
+	Format(Items, 64, "weapon_g3sg1");
 	//Format(Items[desc], 64, "G3SG1");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "m4a1");
+	Format(Items, 64, "weapon_m4a1");
 	//Format(Items[desc], 64, "M4A1");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "m4a1_silencer");
+	Format(Items, 64, "weapon_m4a1_silencer");
 	//Format(Items[desc], 64, "M4A1-S");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "ak47");
+	Format(Items, 64, "weapon_ak47");
 	//Format(Items[desc], 64, "AK-47");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "aug");
+	Format(Items, 64, "weapon_aug");
 	//Format(Items[desc], 64, "AUG");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "galilar");
+	Format(Items, 64, "weapon_galilar");
 	//Format(Items[desc], 64, "Galil AR");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "awp");
+	Format(Items, 64, "weapon_awp");
 	//Format(Items[desc], 64, "AWP");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "sg556");
+	Format(Items, 64, "weapon_sg556");
 	//Format(Items[desc], 64, "SG 553");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "ump45");
+	Format(Items, 64, "weapon_ump45");
 	//Format(Items[desc], 64, "UMP-45");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "mp7");
+	Format(Items, 64, "weapon_mp7");
 	//Format(Items[desc], 64, "MP7");
 	PushArrayString(array_armas, Items);
 
-	Format(Items, 64, "famas");
+	Format(Items, 64, "weapon_famas");
 	//Format(Items[desc], 64, "FAMAS");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "mp9");
+	Format(Items, 64, "weapon_mp9");
 	//Format(Items[desc], 64, "MP9");
 	PushArrayString(array_armas, Items);
 
-	Format(Items, 64, "mac10");
+	Format(Items, 64, "weapon_mac10");
 	//Format(Items[desc], 64, "MAC-10");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "ssg08");
+	Format(Items, 64, "weapon_ssg08");
 	//Format(Items[desc], 64, "SSG 08");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "nova");
+	Format(Items, 64, "weapon_nova");
 	//Format(Items[desc], 64, "Nova");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "xm1014");
+	Format(Items, 64, "weapon_xm1014");
 	//Format(Items[desc], 64, "XM1014");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "sawedoff");
+	Format(Items, 64, "weapon_sawedoff");
 	//Format(Items[desc], 64, "Sawed-Off");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "mag7");
+	Format(Items, 64, "weapon_mag7");
 	//Format(Items[desc], 64, "MAG-7");
 	PushArrayString(array_armas, Items);
 	
 
 	
 	// Secondary weapons
-	Format(Items, 64, "elite");
+	Format(Items, 64, "weapon_elite");
 	//Format(Items[desc], 64, "Dual Berettas");
 	PushArrayString(array_armas, Items);
 
-	Format(Items, 64, "deagle");
+	Format(Items, 64, "weapon_deagle");
 	//Format(Items[desc], 64, "Desert Eagle");
 	PushArrayString(array_armas, Items);
 
-	Format(Items, 64, "tec9"); // 26
+	Format(Items, 64, "weapon_tec9"); // 26
 	//Format(Items[desc], 64, "Tec-9");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "fiveseven");
+	Format(Items, 64, "weapon_fiveseven");
 	//Format(Items[desc], 64, "Five-SeveN");
 	PushArrayString(array_armas, Items);
 
-	Format(Items, 64, "cz75a");
+	Format(Items, 64, "weapon_cz75a");
 	//Format(Items[desc], 64, "CZ75-Auto");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "glock");
+	Format(Items, 64, "weapon_glock");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "usp_silencer");
+	Format(Items, 64, "weapon_usp_silencer");
 	//Format(Items[desc], 64, "USP-S");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "p250");
+	Format(Items, 64, "weapon_p250");
 	//Format(Items[desc], 64, "P250");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "hkp2000");
+	Format(Items, 64, "weapon_hkp2000");
 	//Format(Items[desc], 64, "P2000");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "bayonet");
+	Format(Items, 64, "weapon_bayonet");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "knife_gut");
+	Format(Items, 64, "weapon_knife_gut");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "knife_flip");
+	Format(Items, 64, "weapon_knife_flip");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "knife_m9_bayonet");
+	Format(Items, 64, "weapon_knife_m9_bayonet");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "knife_karambit");
+	Format(Items, 64, "weapon_knife_karambit");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "knife_tactical");
+	Format(Items, 64, "weapon_knife_tactical");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "knife_butterfly");
+	Format(Items, 64, "weapon_knife_butterfly");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "c4");
+	Format(Items, 64, "weapon_c4");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "knife_falchion");
+	Format(Items, 64, "weapon_knife_falchion");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "knife_push");
-	PushArrayString(array_armas, Items);
-	
-	Format(Items, 64, "revolver");
+	Format(Items, 64, "weapon_knife_push");
 	PushArrayString(array_armas, Items);
 	
 	for (new client = 1; client <= MaxClients; client++)
@@ -385,14 +382,14 @@ public OnSqlConnect(Handle:owner, Handle:hndl, const String:error[], any:data)
 		SQL_GetDriverIdent(SQL_ReadDriver(db), buffer, sizeof(buffer));
 		ismysql = StrEqual(buffer,"mysql", false) ? 1 : 0;
 	
-		new String:temp[64][43];
+		new String:temp[64][41];
 		for(new i=0;i<GetArraySize(array_armas);++i)
 		{
 			GetArrayString(array_armas, i, temp[i], 64);
 		}
 		if (ismysql == 1)
 		{
-			Format(buffer, sizeof(buffer), "CREATE TABLE IF NOT EXISTS `weaponpaints` (`playername` varchar(128) NOT NULL, `steamid` varchar(32) NOT NULL, `last_accountuse` int(64) NOT NULL, `%s` varchar(64) NOT NULL DEFAULT 'none', `%s` varchar(64) NOT NULL DEFAULT 'none', `%s` varchar(64) NOT NULL DEFAULT 'none', `%s` varchar(64) NOT NULL DEFAULT 'none', `%s` varchar(64) NOT NULL DEFAULT 'none', `%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`favorite1` varchar(64) NOT NULL DEFAULT 'none',`favorite2` varchar(64) NOT NULL DEFAULT 'none',`favorite3` varchar(64) NOT NULL DEFAULT 'none',`favorite4` varchar(64) NOT NULL DEFAULT 'none',`favorite5` varchar(64) NOT NULL DEFAULT 'none',`favorite6` varchar(64) NOT NULL DEFAULT 'none',`favorite7` varchar(64) NOT NULL DEFAULT 'none',PRIMARY KEY  (`steamid`))",temp[0],temp[1],temp[2],temp[3],temp[4],temp[5],temp[6],temp[7],temp[8],temp[9],temp[10],temp[11],temp[12],temp[13],temp[14],temp[15],temp[16],temp[17],temp[18],temp[19],temp[20],temp[21],temp[22],temp[23],temp[24],temp[25],temp[26],temp[27],temp[28],temp[29],temp[30],temp[31],temp[32],temp[33],temp[34],temp[35],temp[36],temp[37],temp[38],temp[39],temp[40], temp[41], temp[42]);
+			Format(buffer, sizeof(buffer), "CREATE TABLE IF NOT EXISTS `weaponpaints` (`playername` varchar(128) NOT NULL, `steamid` varchar(32) NOT NULL, `last_accountuse` int(64) NOT NULL, `%s` varchar(64) NOT NULL DEFAULT 'none', `%s` varchar(64) NOT NULL DEFAULT 'none', `%s` varchar(64) NOT NULL DEFAULT 'none', `%s` varchar(64) NOT NULL DEFAULT 'none', `%s` varchar(64) NOT NULL DEFAULT 'none', `%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`%s` varchar(64) NOT NULL DEFAULT 'none',`favorite1` varchar(64) NOT NULL DEFAULT 'none',`favorite2` varchar(64) NOT NULL DEFAULT 'none',`favorite3` varchar(64) NOT NULL DEFAULT 'none',`favorite4` varchar(64) NOT NULL DEFAULT 'none',`favorite5` varchar(64) NOT NULL DEFAULT 'none',`favorite6` varchar(64) NOT NULL DEFAULT 'none',`favorite7` varchar(64) NOT NULL DEFAULT 'none',PRIMARY KEY  (`steamid`))",temp[0],temp[1],temp[2],temp[3],temp[4],temp[5],temp[6],temp[7],temp[8],temp[9],temp[10],temp[11],temp[12],temp[13],temp[14],temp[15],temp[16],temp[17],temp[18],temp[19],temp[20],temp[21],temp[22],temp[23],temp[24],temp[25],temp[26],temp[27],temp[28],temp[29],temp[30],temp[31],temp[32],temp[33],temp[34],temp[35],temp[36],temp[37],temp[38],temp[39],temp[40]);
 
 			LogToFileEx(g_sCmdLogPath, "Query %s", buffer);
 			SQL_TQuery(db, tbasicoC, buffer);
@@ -400,7 +397,7 @@ public OnSqlConnect(Handle:owner, Handle:hndl, const String:error[], any:data)
 		}
 		else
 		{
-			Format(buffer, sizeof(buffer), "CREATE TABLE IF NOT EXISTS weaponpaints (playername varchar(128) NOT NULL, steamid varchar(32) NOT NULL, last_accountuse int(64) NOT NULL, %s varchar(64) NOT NULL DEFAULT 'none', %s varchar(64) NOT NULL DEFAULT 'none', %s varchar(64) NOT NULL DEFAULT 'none', %s varchar(64) NOT NULL DEFAULT 'none', %s varchar(64) NOT NULL DEFAULT 'none', %s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',favorite1 varchar(64) NOT NULL DEFAULT 'none',favorite2 varchar(64) NOT NULL DEFAULT 'none',favorite3 varchar(64) NOT NULL DEFAULT 'none',favorite4 varchar(64) NOT NULL DEFAULT 'none',favorite5 varchar(64) NOT NULL DEFAULT 'none',favorite6 varchar(64) NOT NULL DEFAULT 'none',favorite7 varchar(64) NOT NULL DEFAULT 'none',PRIMARY KEY  (steamid))",temp[0],temp[1],temp[2],temp[3],temp[4],temp[5],temp[6],temp[7],temp[8],temp[9],temp[10],temp[11],temp[12],temp[13],temp[14],temp[15],temp[16],temp[17],temp[18],temp[19],temp[20],temp[21],temp[22],temp[23],temp[24],temp[25],temp[26],temp[27],temp[28],temp[29],temp[30],temp[31],temp[32],temp[33],temp[34],temp[35],temp[36],temp[37],temp[38],temp[39],temp[40],temp[41], temp[42]);
+			Format(buffer, sizeof(buffer), "CREATE TABLE IF NOT EXISTS weaponpaints (playername varchar(128) NOT NULL, steamid varchar(32) NOT NULL, last_accountuse int(64) NOT NULL, %s varchar(64) NOT NULL DEFAULT 'none', %s varchar(64) NOT NULL DEFAULT 'none', %s varchar(64) NOT NULL DEFAULT 'none', %s varchar(64) NOT NULL DEFAULT 'none', %s varchar(64) NOT NULL DEFAULT 'none', %s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',%s varchar(64) NOT NULL DEFAULT 'none',favorite1 varchar(64) NOT NULL DEFAULT 'none',favorite2 varchar(64) NOT NULL DEFAULT 'none',favorite3 varchar(64) NOT NULL DEFAULT 'none',favorite4 varchar(64) NOT NULL DEFAULT 'none',favorite5 varchar(64) NOT NULL DEFAULT 'none',favorite6 varchar(64) NOT NULL DEFAULT 'none',favorite7 varchar(64) NOT NULL DEFAULT 'none',PRIMARY KEY  (steamid))",temp[0],temp[1],temp[2],temp[3],temp[4],temp[5],temp[6],temp[7],temp[8],temp[9],temp[10],temp[11],temp[12],temp[13],temp[14],temp[15],temp[16],temp[17],temp[18],temp[19],temp[20],temp[21],temp[22],temp[23],temp[24],temp[25],temp[26],temp[27],temp[28],temp[29],temp[30],temp[31],temp[32],temp[33],temp[34],temp[35],temp[36],temp[37],temp[38],temp[39],temp[40]);
 		
 			LogToFileEx(g_sCmdLogPath, "Query %s", buffer);
 			SQL_TQuery(db, tbasicoC, buffer);
@@ -660,7 +657,7 @@ public DIDMenuHandler(Handle:menu, MenuAction:action, client, itemNum)
 				if(g_rmenu) ShowMenu(client, GetMenuSelectionPosition());
 				return;
 			}
-			ReplaceString(Classname, 64, "weapon_", "");
+		
 			new weaponindex = GetEntProp(windex, Prop_Send, "m_iItemDefinitionIndex");
 			if(weaponindex == 42 || weaponindex == 59)
 			{
@@ -672,19 +669,18 @@ public DIDMenuHandler(Handle:menu, MenuAction:action, client, itemNum)
 			{
 				switch (weaponindex)
 				{
-					case 60: strcopy(Classname, 64, "m4a1_silencer");
-					case 61: strcopy(Classname, 64, "usp_silencer");
-					case 63: strcopy(Classname, 64, "cz75a");
-					case 500: strcopy(Classname, 64, "bayonet");
-					case 506: strcopy(Classname, 64, "knife_gut");
-					case 505: strcopy(Classname, 64, "knife_flip");
-					case 508: strcopy(Classname, 64, "knife_m9_bayonet");
-					case 507: strcopy(Classname, 64, "knife_karambit");
-					case 509: strcopy(Classname, 64, "knife_tactical");
-					case 515: strcopy(Classname, 64, "knife_butterfly");
-					case 512: strcopy(Classname, 64, "knife_falchion");
-					case 516: strcopy(Classname, 64, "knife_push");
-					case 64: strcopy(Classname, 64, "revolver");
+					case 60: strcopy(Classname, 64, "weapon_m4a1_silencer");
+					case 61: strcopy(Classname, 64, "weapon_usp_silencer");
+					case 63: strcopy(Classname, 64, "weapon_cz75a");
+					case 500: strcopy(Classname, 64, "weapon_bayonet");
+					case 506: strcopy(Classname, 64, "weapon_knife_gut");
+					case 505: strcopy(Classname, 64, "weapon_knife_flip");
+					case 508: strcopy(Classname, 64, "weapon_knife_m9_bayonet");
+					case 507: strcopy(Classname, 64, "weapon_knife_karambit");
+					case 509: strcopy(Classname, 64, "weapon_knife_tactical");
+					case 515: strcopy(Classname, 64, "weapon_knife_butterfly");
+					case 512: strcopy(Classname, 64, "weapon_knife_falchion");
+					case 516: strcopy(Classname, 64, "weapon_knife_push");
 				}
 				
 				if(arbol[client] == INVALID_HANDLE)
@@ -703,7 +699,7 @@ public DIDMenuHandler(Handle:menu, MenuAction:action, client, itemNum)
 					}
 					
 					decl String:buffer[1024], String:nombres[64];
-					if(theindex == 0) Format(nombres, sizeof(nombres), "random");
+					if(theindex == -1) Format(nombres, sizeof(nombres), "random");
 					else Format(nombres, sizeof(nombres), g_paints[theindex][Nombre]);
 					decl String:steamid[32];
 					GetClientAuthId(client, AuthId_Steam2,  steamid, sizeof(steamid) );
@@ -751,7 +747,7 @@ public DIDMenuHandler(Handle:menu, MenuAction:action, client, itemNum)
 			else 
 			{
 				decl String:buffer[1024], String:nombres[64];
-				if(theindex == 0) Format(nombres, sizeof(nombres), "random");
+				if(theindex == -1) Format(nombres, sizeof(nombres), "random");
 				else Format(nombres, sizeof(nombres), g_paints[theindex][Nombre]);
 				decl String:steamid[32];
 				GetClientAuthId(client, AuthId_Steam2,  steamid, sizeof(steamid) );
@@ -982,7 +978,6 @@ public Action:OnPostWeaponEquip(client, weapon)
 	{
 		return;
 	}
-	ReplaceString(Classname, 64, "weapon_", "");
 	new weaponindex = GetEntProp(weapon, Prop_Send, "m_iItemDefinitionIndex");
 	if(weaponindex == 42 || weaponindex == 59)
 	{
@@ -991,19 +986,18 @@ public Action:OnPostWeaponEquip(client, weapon)
 
 	switch (weaponindex)
 	{
-		case 60: strcopy(Classname, 64, "m4a1_silencer");
-		case 61: strcopy(Classname, 64, "usp_silencer");
-		case 63: strcopy(Classname, 64, "cz75a");
-		case 500: strcopy(Classname, 64, "bayonet");
-		case 506: strcopy(Classname, 64, "knife_gut");
-		case 505: strcopy(Classname, 64, "knife_flip");
-		case 508: strcopy(Classname, 64, "knife_m9_bayonet");
-		case 507: strcopy(Classname, 64, "knife_karambit");
-		case 509: strcopy(Classname, 64, "knife_tactical");
-		case 515: strcopy(Classname, 64, "knife_butterfly");
-		case 512: strcopy(Classname, 64, "knife_falchion");
-		case 516: strcopy(Classname, 64, "knife_push");
-		case 64: strcopy(Classname, 64, "revolver");
+		case 60: strcopy(Classname, 64, "weapon_m4a1_silencer");
+		case 61: strcopy(Classname, 64, "weapon_usp_silencer");
+		case 63: strcopy(Classname, 64, "weapon_cz75a");
+		case 500: strcopy(Classname, 64, "weapon_bayonet");
+		case 506: strcopy(Classname, 64, "weapon_knife_gut");
+		case 505: strcopy(Classname, 64, "weapon_knife_flip");
+		case 508: strcopy(Classname, 64, "weapon_knife_m9_bayonet");
+		case 507: strcopy(Classname, 64, "weapon_knife_karambit");
+		case 509: strcopy(Classname, 64, "weapon_knife_tactical");
+		case 515: strcopy(Classname, 64, "weapon_knife_butterfly");
+		case 512: strcopy(Classname, 64, "weapon_knife_falchion");
+		case 516: strcopy(Classname, 64, "weapon_knife_push");
 	}
 	if(arbol[client] == INVALID_HANDLE) return;
 	new valor = 0;
