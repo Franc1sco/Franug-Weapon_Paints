@@ -12,6 +12,7 @@
 		"tr"		"Silahın boyasını değiştirebilirsiniz."
 		"ptbr"		"Escolha uma camuflagem para sua arma"
 		"de"		"Wähle eine Tarnung für deine Waffe"
+		"zho"       "選擇武器SKIN"
         }
         "Weapon paints reloaded"
         {
@@ -25,6 +26,7 @@
 		"tr"		"Silah boyaları yenilendi."
 		"ptbr"		"Camuflagens recarregadas"
 		"de"		"Tarnungen neu geladen"
+		"zho"       "已重新讀取武器SKIN"
         }
         "You cant use this when you are dead"
         {
@@ -38,6 +40,7 @@
 		"tr"		"Ölüyken kullanamassınız."
 		"ptbr"		"Nao pode usar isso enquanto estiver morto"
 		"de"		"Du kannst dies nicht benutzen wenn du tot bist"
+		"zho"       "你無法在死亡時使用這個指令"
         }
         "You cant use this when you are in a lastrequest"
         {
@@ -51,6 +54,7 @@
 		"tr"		"Son isteğiniz uygulanmadan kullanamassınız"
 		"ptbr"		"Nao pode usar isso no ultimo pedido"
 		"de"		"Du kannst dies nicht während eines LastRequest benutzen"
+		"zho"       "當你在lastrequest時無法使用個個指令"
         }
         "You cant use a paint in this weapon"
         {
@@ -64,6 +68,7 @@
 		"tr"		"Bu silaha bu boyayı kullanamassınız"
 		"ptbr"		"Camuflagem incompativel para esta arma"
 		"de"		"Dies ist nicht mit deiner Waffe verwendbar"
+		"zho"       "你不能在這個武器使用SKIN"
         }
         "You have choose your default paint for your"
         {
@@ -78,6 +83,7 @@
 		"tr"		"Burdan{purple} normal boyaya {default} geçebilirsiniz{purple} {1}"
 		"ptbr"		"Voce escolheu{purple} a camuflagem padrao {default} para a {purple} {1}"
 		"de"		"Du hast die normale Tarnung für deine {purple}{1} {default} ausgewählt"
+		"zho"       "你已經選擇{purple} 預設SKIN {default}在你的{purple} {1}"
         }
         "You have choose a random paint for your"
         {
@@ -92,6 +98,7 @@
 		"tr"		"Burdan{purple} rasgele silah boyası {default}seçebilirsiniz.{purple} {1}"
 		"ptbr"		"Voce escolheu{purple} uma camuflagem aleatoria {default}para a {purple} {1}"
 		"de"		"Du hast eine {purple}Zufallstarnung{default} für deine {purple}{1} {default} ausgewählt"
+		"zho"       "你已經選擇{purple} 隨機SKIN {default}在你的{purple} {1}"
         }
         "You have choose a weapon"
         {
@@ -106,6 +113,7 @@
 		"tr"		"Silah{purple} {1} {default}boyanız değiştirildi.{purple} {2"
 		"ptbr"		"Voce escolheu{purple} {1} {default}para a {purple} {2}"
 		"de"		"Du hast {purple}{1} {default} für deine {purple}{2} {default}ausgewählt"
+		"zho"       "你已經選擇{purple} {1} {default}在你的{purple} {2}"
         }
         "You can use this command only the first seconds"
         {
@@ -118,6 +126,7 @@
 		"pt"		"Podes usar este comando nos primeiros{purple} {1} {default}segundos da ronda"
 		"pl"		"Możesz użyć tego polecenia tylko pierwszych{purple} {1} {default}sekundach w tej rundzie"
 		"ru"		"Вы можете использовать эту команду только в течении{purple} {1} {default}секунд с начала раунда"
+		"zho"       "你只能在回合的前{purple} {1} {default}秒使用這個指令"
         }
         "Random paint"
         {
@@ -129,6 +138,7 @@
 		"fr"		"Peinture aleatoire"
 		"tr"		"Rasgele boya"
 		"ru"		"Случайная раскраска"
+		"zho"       "隨機SKIN"
         }
         "Default paint"
         {
@@ -140,6 +150,7 @@
 		"fr"		"Peinture par defaut"
 		"tr"		"Normal boya"
 		"ru"		"Стандартная раскраска"
+		"zho"       "預設SKIN"
         }
         "Paint not found"
         {
@@ -151,6 +162,7 @@
 		"fr"		"Peinture non trouve pour cette arme"
 		"tr"		"Boya bulunamadı"
 		"ru"		"Раскраска для этого оружия не найдена"
+		"zho"       "找不到這個武器的SKIN"
         }
         "Paint found"
         {
@@ -163,74 +175,88 @@
 		"fr"		"La peinture de cette arme est{purple} {1}"
 		"tr"		"Silahınıza boya eklendi{purple} {1}"
 		"ru"		"Раскраска этого оружия{purple} {1}"
+		"zho"       "這個武器的SKIN是{purple} {1}"
         }
         "Menu title 2"
         {
 		"#format"	"{1:s}"
 		"en"		"Weapon Paints [{1} public version]"
 		"es"		"Pintura de Armas [{1} version publica]"
+		"zho"       "武器SKIN選單 [{1} 公開版]"
         }
         "Select paint for the current weapon"
         {
 		"en"		"Select paint for the current weapon"
 		"es"		"Selecciona pintura para tu arma actual"
+		"zho"       "選擇目前武器的SKIN"
         }
         "Select paint for each weapon"
         {
 		"en"		"Select paint for each weapon"
 		"es"		"Selecciona pintura para cada arma"
+		"zho"       "選擇每個武器的SKIN"
         }
 
         "Favorite paints menu"
         {
 		"en"		"Favorite paints menu"
 		"es"		"Menu de pinturas favoritas"
+		"zho"       "我的最愛SKIN選單"
         }
         "Add a favorite paint"
         {
 		"en"		"Add new favorite paint"
 		"es"		"Agregar nueva pintura favorita"
+		"zho"       "增加SKIN到我的最愛列表"
         }
         "Remove a favorite paint"
         {
 		"en"		"Remove a favorite paint"
 		"es"		"Borrar una pintura favorita"
+		"zho"       "從我的最愛列表移除SKIN"
         }
         "Available favorite paint slot"
         {
 		"en"		"Available favorite paint slot"
 		"es"		"Ranura de pintura favorita disponible"
+		 "zho"       "未選擇"
         }
         "Add a favorite paint"
         {
 		"en"		"Add new favorite paint"
 		"es"		"Agregar nueva pintura favorita"
+		"zho"       "增加SKIN到我的最愛列表"
         }
         "Remove a favorite paint"
         {
 		"en"		"Remove a favorite paint"
 		"es"		"Borrar una pintura favorita"
+		"zho"       "從我的最愛列表移除SKIN"
         }
         "You added a favorite paint"
         {
 		"#format"	"{1:s}"
 		"en"		"You added {purple}{1} {default}to your favorite paints"
 		"es"		"Tu has agregado {purple}{1} {default}a tus pinturas favoritas"
+		"zho"       "你新增了 {purple}{1} {default}到你的最愛列表"
         }
         "You removed a favorite paint"
         {
 		"#format"	"{1:s}"
 		"en"		"You removed {purple}{1} {default}from your favorite paints"
 		"es"		"Tu has borrado {purple}{1} {default}de tus pinturas favoritas"
+		"zho"       "你從你的最愛列表移除了 {purple}{1}"
         }
         "Select a paint from your favorites"
         {
 		"en"		"Select a paint from your favorites"
 		"es"		"Selecciona una pintura de tus favoritas"
+		"zho"       "從最愛列表選擇SKIN"
         }
         "You dont have access to this paint"
         {
 		"en"		"You dont have access to this paint"
 		"es"		"Tu no tienes acceso a esta pintura"
+		"zho"       "你沒有使用這個SKIN的權限"
         }
 }
