@@ -224,13 +224,14 @@
         "Add a favorite paint"
         {
 		"en"		"Add new favorite paint"
-		"es"		"我的最愛SKIN"
+		"es"		"Agregar nueva pintura favorita"
+		"zho"       "增加SKIN到我的最愛列表"
         }
         "Remove a favorite paint"
         {
 		"en"		"Remove a favorite paint"
 		"es"		"Borrar una pintura favorita"
-		"zho"       "移除我的最愛SKIN"
+		"zho"       "從我的最愛列表移除SKIN"
         }
         "You added a favorite paint"
         {
