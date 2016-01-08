@@ -6,7 +6,7 @@
 		"es"		"Selecciona una pintura para tu arma"
 		"fr"		"Selectionnez une peinture pour votre arme"
 		"ru"        "Выберите раскраску для своего оружия"
-		"pl"		"Wybierz farbę dla swojej broni"
+		"pl"		"Wybierz skina dla swojej broni"
 		"ro"		"Alege o culoare pentru arma ta"
 		"pt"		"Escolhe uma pintura para a tua arma"
 		"tr"		"Silahın boyasını değiştirebilirsiniz."
@@ -34,7 +34,7 @@
 		"es"		"No puedes usar esto cuando estas muerto"
 		"fr" 		"Vous ne pouvez l'utiliser quand vous etes mort"
 		"ru"        "Вы не можете использовать раскраску когда вы мертвы"
-		"pl"		"Nie możesz używać tego, kiedy jesteś martwy"
+		"pl"		"Nie możesz tego użyć, kiedy jesteś martwy"
 		"ro"		"Nu poți utiliza când ești mort"
 		"pt"		"Nao podes usar isto enquanto morto"
 		"tr"		"Ölüyken kullanamassınız."
@@ -48,7 +48,7 @@
 		"es"		"No puedes usar esto cuando estas en ultimo deseo"
 		"fr"		"Vous ne pouvez l'utiliser quand vous etes en dernière requete"
 		"ru"        "Вы не можете использовать раскраску, когда вы находитесь в последнем запросе"
-		"pl"		"Nie możesz używać tego gdy jesteś w lastrequest"
+		"pl"		"Nie możesz użyć tego gdy jesteś w lastrequest"
 		"ro"		"Nu poți utiliza în timpul ultimei cerințe"
 		"pt"		"Nao podes usar isto no ultimo pedido"
 		"tr"		"Son isteğiniz uygulanmadan kullanamassınız"
@@ -62,7 +62,7 @@
 		"es"		"No puedes usar una pintura en este arma"
 		"fr"		"Vous ne pouvez utiliser une peinture pour cette arme"
 		"ru"        "Вы не можете использовать раскраску на этом оружии"
-		"pl"		"Nie można użyć farby w tej broni"
+		"pl"		"Nie można użyć skina na tej broni"
 		"ro"		"Nu poți utiliza o culoare pe această armă"
 		"pt"		"Nao podes usar uma pintura nesta arma"
 		"tr"		"Bu silaha bu boyayı kullanamassınız"
@@ -77,7 +77,7 @@
 		"es"		"Has elegido{purple} tu pintura por defecto {default}para tu{purple} {1}"
 		"fr"		"Vous avez choisi{purple} votre peinture par defaut {default}pour votre{purple} {1}"
 		"ru"        "Вы выбрали{purple} стандартную раскраску {default}для вашего{purple} {1}"
-		"pl"		"Wybrałeś{purple} domyślną farbę {default}dla twojego{purple} {1}"
+		"pl"		"Wybrałeś{purple} domyślnego skina {default}dla twojego{purple} {1}"
 		"ro"		"Ai ales{purple} culoarea ta standard {default}pentru tine{purple} {1}"
 		"pt"		"Escolhes-te{purple} a tua pintura predefinida {default} para a tua{purple} {1}"
 		"tr"		"Burdan{purple} normal boyaya {default} geçebilirsiniz{purple} {1}"
@@ -92,7 +92,7 @@
 		"es"		"Has elegido{purple} una pintura aleatoria {default}para tu{purple} {1}"
 		"fr"		"Vous avez choisi{purple} une peinture aléatoir {default}pour votre{purple} {1}"
 		"ru"        "Вы выбрали{purple} случайную раскраску {default}для вашего{purple} {1}"
-		"pl"		"Wybrałeś{purple} Losową Farbę {default}dla twojego{purple} {1}"
+		"pl"		"Wybrałeś{purple} Losowego skina {default}dla twojego{purple} {1}"
 		"ro"		"Au ales{purple} culoare aleatorie {default}pentru tine{purple} {1}"
 		"pt"		"Escolhes-te{purple} uma pintura aleatoria {default}para a tua{purple} {1}"
 		"tr"		"Burdan{purple} rasgele silah boyası {default}seçebilirsiniz.{purple} {1}"
@@ -124,7 +124,7 @@
 		"tr"		"Bu Komutu sadece ilk saniyelerde{purple} {1} {default}kullanabilirsiniz."
 		"fr"		"Vous pouvez utiliser cette commande uniquement dans les premieres secondes du round"
 		"pt"		"Podes usar este comando nos primeiros{purple} {1} {default}segundos da ronda"
-		"pl"		"Możesz użyć tego polecenia tylko pierwszych{purple} {1} {default}sekundach w tej rundzie"
+		"pl"		"Możesz użyć tego polecenia tylko w pierwszych{purple} {1} {default}sekundach"
 		"ru"		"Вы можете использовать эту команду только в течении{purple} {1} {default}секунд с начала раунда"
 		"zho"       "你只能在回合的前{purple} {1} {default}秒使用這個指令"
         }
@@ -133,7 +133,7 @@
 		"en"		"Random paint"
 		"es"		"Pintura aleatoria"		
 		"de"		"Zufall"
-		"pl"		"Losowe farby"
+		"pl"		"Losowy skin"
 		"pt"		"Pintura aleatoria"
 		"fr"		"Peinture aleatoire"
 		"tr"		"Rasgele boya"
@@ -145,7 +145,7 @@
 		"en"		"Default paint"
 		"es"		"Pintura por defecto"	
 		"de"		"Standard"
-		"pl"		"Farba Normalna"
+		"pl"		"Domyślny skin"
 		"pt"		"Pintura por defeito"
 		"fr"		"Peinture par defaut"
 		"tr"		"Normal boya"
@@ -157,7 +157,7 @@
 		"en"		"Paint not found for this weapon"
 		"es"		"No se ha encontrado pintura para esta arma"		
 		"de"		"Tarnung für diese Waffe nicht gefunden"
-		"pl"		"Farba nie działa dla tej broni"
+		"pl"		"Skin nie działa dla tej broni"
 		"pt"		"Pintura nao encontrada para esta arma"
 		"fr"		"Peinture non trouve pour cette arme"
 		"tr"		"Boya bulunamadı"
@@ -170,7 +170,7 @@
 		"en"		"The paint of this weapon is{purple} {1}"
 		"es"		"La pintura de este arma es{purple} {1}"		
 		"de"		"Die aktuelle Tarnung ist{purple} {1}"
-		"pl"		"Farba tej broni jest{purple} {1}"
+		"pl"		"Skin dla tej broni to {purple} {1}"
 		"pt"		"Pintura escolhida{purple} {1}"
 		"fr"		"La peinture de cette arme est{purple} {1}"
 		"tr"		"Silahınıza boya eklendi{purple} {1}"
@@ -181,18 +181,21 @@
         {
 		"#format"	"{1:s}"
 		"en"		"Weapon Paints [{1} public version]"
+		"pl"		"Weapon Paints wersja {1} publiczna"
 		"es"		"Pintura de Armas [{1} version publica]"
 		"zho"       "武器SKIN選單 [{1} 公開版]"
         }
         "Select paint for the current weapon"
         {
 		"en"		"Select paint for the current weapon"
+		"pl"		"Wybierz skina dla tej broni"
 		"es"		"Selecciona pintura para tu arma actual"
 		"zho"       "選擇目前武器的SKIN"
         }
         "Select paint for each weapon"
         {
 		"en"		"Select paint for each weapon"
+		"pl"		"Wybierz skina dla każdej broni"
 		"es"		"Selecciona pintura para cada arma"
 		"zho"       "選擇每個武器的SKIN"
         }
@@ -200,36 +203,42 @@
         "Favorite paints menu"
         {
 		"en"		"Favorite paints menu"
+		"pl"		"Ulubione skiny"
 		"es"		"Menu de pinturas favoritas"
 		"zho"       "我的最愛SKIN選單"
         }
         "Add a favorite paint"
         {
 		"en"		"Add new favorite paint"
+		"pl"		"Dodaj skina do ulubionych"
 		"es"		"Agregar nueva pintura favorita"
 		"zho"       "增加SKIN到我的最愛列表"
         }
         "Remove a favorite paint"
         {
 		"en"		"Remove a favorite paint"
+		"pl"		"Usuń skina z ulubionych"
 		"es"		"Borrar una pintura favorita"
 		"zho"       "從我的最愛列表移除SKIN"
         }
         "Available favorite paint slot"
         {
 		"en"		"Available favorite paint slot"
+		"pl"		"Dostępne miejsce na ulubione skiny"
 		"es"		"Ranura de pintura favorita disponible"
 		 "zho"       "未選擇"
         }
         "Add a favorite paint"
         {
 		"en"		"Add new favorite paint"
+		"pl"		"Dodaj skina do ulubionych"
 		"es"		"Agregar nueva pintura favorita"
 		"zho"       "增加SKIN到我的最愛列表"
         }
         "Remove a favorite paint"
         {
 		"en"		"Remove a favorite paint"
+		"pl"		"Usuń skina z ulubionych"
 		"es"		"Borrar una pintura favorita"
 		"zho"       "從我的最愛列表移除SKIN"
         }
@@ -237,6 +246,7 @@
         {
 		"#format"	"{1:s}"
 		"en"		"You added {purple}{1} {default}to your favorite paints"
+		"pl"		"Dodałeś {purple}{1} {default} do swoich ulubionych skinów"
 		"es"		"Tu has agregado {purple}{1} {default}a tus pinturas favoritas"
 		"zho"       "你新增了 {purple}{1} {default}到你的最愛列表"
         }
@@ -244,18 +254,21 @@
         {
 		"#format"	"{1:s}"
 		"en"		"You removed {purple}{1} {default}from your favorite paints"
+		"pl"        "Usunąłeś {purple}{1} {default} ze swoich ulubionych skinów"
 		"es"		"Tu has borrado {purple}{1} {default}de tus pinturas favoritas"
 		"zho"       "你從你的最愛列表移除了 {purple}{1}"
         }
         "Select a paint from your favorites"
         {
 		"en"		"Select a paint from your favorites"
+		"pl"        "Wybierz skina z ulubionych"
 		"es"		"Selecciona una pintura de tus favoritas"
 		"zho"       "從最愛列表選擇SKIN"
         }
         "You dont have access to this paint"
         {
 		"en"		"You dont have access to this paint"
+		"pl"        "Nie masz dostępu do tego skina"
 		"es"		"Tu no tienes acceso a esta pintura"
 		"zho"       "你沒有使用這個SKIN的權限"
         }
