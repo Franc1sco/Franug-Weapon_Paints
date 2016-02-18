@@ -297,7 +297,7 @@ public OnPluginStart()
 	Format(Items, 64, "revolver");
 	PushArrayString(array_armas, Items);
 	
-	Format(Items, 64, "bowie");
+	Format(Items, 64, "knife_survival_bowie");
 	PushArrayString(array_armas, Items);
 	
 	for (new client = 1; client <= MaxClients; client++)
