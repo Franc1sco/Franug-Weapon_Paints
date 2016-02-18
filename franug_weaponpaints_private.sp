@@ -297,6 +297,9 @@ public OnPluginStart()
 	Format(Items, 64, "revolver");
 	PushArrayString(array_armas, Items);
 	
+	Format(Items, 64, "bowie");
+	PushArrayString(array_armas, Items);
+	
 	for (new client = 1; client <= MaxClients; client++)
 	{
 		if (!IsClientInGame(client))
@@ -685,6 +688,7 @@ public DIDMenuHandler(Handle:menu, MenuAction:action, client, itemNum)
 					case 512: strcopy(Classname, 64, "knife_falchion");
 					case 516: strcopy(Classname, 64, "knife_push");
 					case 64: strcopy(Classname, 64, "revolver");
+					case 514: strcopy(Classname, 64, "knife_survival_bowie");
 				}
 				
 				if(arbol[client] == INVALID_HANDLE)
@@ -1006,6 +1010,7 @@ public Action:OnPostWeaponEquip(client, weapon)
 		case 512: strcopy(Classname, 64, "knife_falchion");
 		case 516: strcopy(Classname, 64, "knife_push");
 		case 64: strcopy(Classname, 64, "revolver");
+		case 514: strcopy(Classname, 64, "knife_survival_bowie");
 	}
 	if(arbol[client] == INVALID_HANDLE) return;
 	new valor = 0;
