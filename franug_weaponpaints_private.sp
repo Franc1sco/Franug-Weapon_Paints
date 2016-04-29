@@ -62,8 +62,8 @@ new ismysql;
 new Handle:array_paints;
 new Handle:array_armas;
 
-#define DATA "2.8.3 public version"
-#define DATA2 "2.8.3"
+#define DATA "2.8.4 public version"
+#define DATA2 "2.8.4"
 
 //new String:base[64] = "weaponpaints";
 
