@@ -20,6 +20,7 @@ enum Listados
 	Float:wear,
 	stattrak,
 	quality,
+	pattern,
 	String:flag[8]
 }
 
@@ -837,6 +838,7 @@ ReadPaints()
 		g_paints[g_paintCount][wear] = KvGetFloat(kv, "wear", 0.01);
 		g_paints[g_paintCount][stattrak] = KvGetNum(kv, "stattrak", -2);
 		g_paints[g_paintCount][quality] = KvGetNum(kv, "quality", 3);
+		g_paints[g_paintCount][pattern] = KvGetNum(kv, "pattern", 0);
 		KvGetString(kv, "flag", g_paints[g_paintCount][flag], 8, "0");
 
 		PushArrayString(array_paints, g_paints[g_paintCount][Nombre]);
@@ -958,6 +960,7 @@ ChangePaint(entity, theindex)
 
 	SetEntProp(entity,Prop_Send,"m_nFallbackPaintKit",g_paints[theindex][index]);
 	if(g_paints[theindex][wear] >= 0.0) SetEntPropFloat(entity,Prop_Send,"m_flFallbackWear",g_paints[theindex][wear]);
+	if(g_paints[theindex][pattern] >= 0) SetEntProp(entity,Prop_Send,"m_nFallbackSeed",g_paints[theindex][pattern]);
 	if(g_paints[theindex][stattrak] != -2) SetEntProp(entity,Prop_Send,"m_nFallbackStatTrak",g_paints[theindex][stattrak]);
 	if(g_paints[theindex][quality] != -2) SetEntProp(entity,Prop_Send,"m_iEntityQuality",g_paints[theindex][quality]);
 	
