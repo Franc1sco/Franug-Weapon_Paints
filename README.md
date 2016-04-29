@@ -5,7 +5,7 @@ The new private version have:
 
 -Multilanguage support.
 
--Method futo generate csgo_wpaints.cfg alphabetically for have it always updated with the latest chromes.
+-Method for autogenerate csgo_wpaints.cfg alphabetically for have it always updated with the latest skins.
 
 -Support against banned tokens. Don't suffer more for the ban!
 
