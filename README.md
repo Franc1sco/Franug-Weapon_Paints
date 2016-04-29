@@ -1,3 +1,17 @@
+# NEW NOTICE! New private version 3.0
+
+The new private version have:
+
+-Multilanguage support.
+-Method futo generate csgo_wpaints.cfg alphabetically for have it always updated with the latest chromes.
+-Support against banned tokens. Don't suffer more for the ban!
+-Soon much more.
+
+Interested people contact with http://steamcommunity.com/id/franug (negotiable price).
+
+# End of notice.
+
+
 You want to support this plugin? you can with donations using Paypal to my account -> franug13@gmail.com
 https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LWD5V2WBKDQPQ
 
