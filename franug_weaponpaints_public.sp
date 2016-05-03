@@ -63,7 +63,6 @@ new Handle:array_paints;
 new Handle:array_armas;
 
 #define DATA "2.8.4 public version"
-#define DATA2 "2.8.4"
 
 //new String:base[64] = "weaponpaints";
 
@@ -485,7 +484,7 @@ ShowMenuM(client)
 	if(onlyadmin && GetUserAdmin(client) == INVALID_ADMIN_ID) return;
 	
 	new Handle:menu2 = CreateMenu(DIDMenuHandler_2);
-	SetMenuTitle(menu2, "%T by Franc1sco franug","Menu title 2", client, DATA2);
+	SetMenuTitle(menu2, "%T by Franc1sco franug","Menu title 2", client, DATA);
 	
 	decl String:tdisplay[64];
 	Format(tdisplay, sizeof(tdisplay), "%T", "Select paint for the current weapon", client);

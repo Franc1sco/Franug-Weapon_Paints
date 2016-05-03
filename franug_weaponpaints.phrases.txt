@@ -180,10 +180,10 @@
         "Menu title 2"
         {
 		"#format"	"{1:s}"
-		"en"		"Weapon Paints [{1} public version]"
-		"pl"		"Weapon Paints wersja {1} publiczna"
-		"es"		"Pintura de Armas [{1} version publica]"
-		"zho"       "武器SKIN選單 [{1} 公開版]"
+		"en"		"Weapon Paints [{1}]"
+		"pl"		"Weapon Paints wersja [{1}]"
+		"es"		"Pintura de Armas [{1}]"
+		"zho"       "武器SKIN選單 [{1}]"
         }
         "Select paint for the current weapon"
         {
