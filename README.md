@@ -12,7 +12,9 @@ The new private version have:
 -Soon much more.
 
 
-Interested people contact with http://steamcommunity.com/id/franug (negotiable price).
+Interested people contact with http://steamcommunity.com/id/franug (negotiable price). 
+
+You can see all my servers with it here http://bans.cola-team.com/index.php?p=servers
 
 # End of notice.
 
