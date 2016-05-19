@@ -1,4 +1,4 @@
-# NEW NOTICE! New private version 3.0
+# NEW NOTICE! New private version 4.0
 
 The new private version have:
 
