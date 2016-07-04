@@ -1,13 +1,15 @@
-# NEW NOTICE! New private version 4.0
+# NEW NOTICE! New private version 4.X
 
 The new private version have:
 
 
--Multilanguage support.
+-Multilanguage support for all the paints.
 
--Method for autogenerate csgo_wpaints.cfg alphabetically for have it always updated with the latest skins.
+-Always updated with the new paints.
 
--Support against banned tokens. Don't suffer more for the ban!
+-Methods for prevent bans in your server and you can use it always.
+
+-Full support.
 
 -Soon much more.
 
