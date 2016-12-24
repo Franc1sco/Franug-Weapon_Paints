@@ -2,7 +2,7 @@
 
 The new private version have:
 
--Weapon pains attached to his corresponding weapon.
+-Weapon paint attached to his corresponding weapon.
 
 -Multilanguage support for all the paints.
 
