@@ -1,7 +1,8 @@
-# NEW NOTICE! New private version 4.X
+# NEW NOTICE! New private version 5.X
 
 The new private version have:
 
+-Weapon pains attached to his corresponding weapon.
 
 -Multilanguage support for all the paints.
 
