@@ -1,6 +1,10 @@
-# NEW NOTICE! New private version 5.X
+# NEW NOTICE! New private version 6.X
 
 The new private version have:
+
+-Fix console spam errors.
+
+-Fixes and optimizations.
 
 -Weapon paint attached to his corresponding weapon.
 
