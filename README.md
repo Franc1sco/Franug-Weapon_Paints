@@ -23,7 +23,7 @@ Interested people contact with http://steamcommunity.com/id/franug (negotiable p
 
 You can see all my servers with it here http://bans.cola-team.com/index.php?p=servers
 
-Note: Be careful with scammers that try to resell false private plugins without support and with virus. Buy plugins always from the original author.
+Note: **Be careful with scammers that try to resell false private plugins without support and with virus. Buy plugins always from the original author.**
 
 
 # End of notice.
