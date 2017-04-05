@@ -276,7 +276,7 @@
         {
 		"#format"	"{1:s}"
     "en"		"You removed {purple}{1} {default}from your favorite paints"
-    "it""		"hai rimosso la skin{purple}{1} {default} dall'elenco delle tue preferite"
+    "it"		"hai rimosso la skin{purple}{1} {default} dall'elenco delle tue preferite"
 		"pl"        "Usunąłeś {purple}{1} {default} ze swoich ulubionych skinów"
 		"es"		"Tu has borrado {purple}{1} {default}de tus pinturas favoritas"
 		"zho"       "你從你的最愛列表移除了 {purple}{1}"
