@@ -36,7 +36,7 @@
 		"es"		"No puedes usar esto cuando estas muerto"
 		"fr" 		"Vous ne pouvez l'utiliser quand vous etes mort"
     "it"    "Non puoi usare questo comando mentre sei morto"
-		"ru"        "Вы не можете использовать раскраску когда вы мертвы"
+		"ru"        "Вы не можете использовать раскраску, когда вы мертвы"
 		"pl"		"Nie możesz tego użyć, kiedy jesteś martwy"
 		"ro"		"Nu poți utiliza când ești mort"
 		"pt"		"Nao podes usar isto enquanto morto"
@@ -134,7 +134,7 @@
     "it"    "Puoi utilizzare questo comando solamente nei primi{purple} {1} {default}secondi del round"
 		"pt"		"Podes usar este comando nos primeiros{purple} {1} {default}segundos da ronda"
 		"pl"		"Możesz użyć tego polecenia tylko w pierwszych{purple} {1} {default}sekundach"
-		"ru"		"Вы можете использовать эту команду только в течении{purple} {1} {default}секунд с начала раунда"
+		"ru"		"Вы можете использовать эту команду только в течении{purple} {1} {default}сек. с начала раунда"
 		"zho"       "你只能在回合的前{purple} {1} {default}秒使用這個指令"
         }
         "Random paint"
@@ -196,6 +196,7 @@
 		"en"		"Weapon Paints [{1}]"
 		"pl"		"Weapon Paints wersja [{1}]"
 		"es"		"Pintura de Armas [{1}]"
+		"en"		"Раскраска оружия [{1}]"
 		"zho"       "武器SKIN選單 [{1}]"
         }
         "Select paint for the current weapon"
@@ -204,6 +205,7 @@
     "it"    "Seleziona una skin per l'arma corrente"
 		"pl"		"Wybierz skina dla tej broni"
 		"es"		"Selecciona pintura para tu arma actual"
+		"ru"		"Выберите раскраску для текущего оружия"
 		"zho"       "選擇目前武器的SKIN"
         }
         "Select paint for each weapon"
@@ -212,6 +214,7 @@
     "it"    "Seleziona skin per ogni arma"
 		"pl"		"Wybierz skina dla każdej broni"
 		"es"		"Selecciona pintura para cada arma"
+		"ru"		"Выберите раскраску для каждого оружия"
 		"zho"       "選擇每個武器的SKIN"
         }
 
@@ -221,6 +224,7 @@
     "it"    "Menù skins preferite"
 		"pl"		"Ulubione skiny"
 		"es"		"Menu de pinturas favoritas"
+		"ru"		"Меню избранных раскрасок"
 		"zho"       "我的最愛SKIN選單"
         }
         "Add a favorite paint"
@@ -229,6 +233,7 @@
     "it"    "Aggiungi una nuova skin preferita"
 		"pl"		"Dodaj skina do ulubionych"
 		"es"		"Agregar nueva pintura favorita"
+		"ru"		"Добавить в избранное"
 		"zho"       "增加SKIN到我的最愛列表"
         }
         "Remove a favorite paint"
@@ -237,6 +242,7 @@
     "it"    "Rimuovi una skin preferita"
 		"pl"		"Usuń skina z ulubionych"
 		"es"		"Borrar una pintura favorita"
+		"ru"		"Удалить из избранного"
 		"zho"       "從我的最愛列表移除SKIN"
         }
         "Available favorite paint slot"
@@ -245,6 +251,7 @@
     "it"    "Slot skin preferita disponibile"
 		"pl"		"Dostępne miejsce na ulubione skiny"
 		"es"		"Ranura de pintura favorita disponible"
+		"ru"		"Доступный избранный слот для раскраски"
 		 "zho"       "未選擇"
         }
         "Add a favorite paint"
@@ -253,6 +260,7 @@
     "it"    "Aggiungi una nuova skin preferita"
 		"pl"		"Dodaj skina do ulubionych"
 		"es"		"Agregar nueva pintura favorita"
+		"ru"		"Добавить новую избранную раскраску"
 		"zho"       "增加SKIN到我的最愛列表"
         }
         "Remove a favorite paint"
@@ -261,6 +269,7 @@
     "it"    "Rimuovi una skin preferita"
 		"pl"		"Usuń skina z ulubionych"
 		"es"		"Borrar una pintura favorita"
+		"ru"		"Удалить избранную раскраску"
 		"zho"       "從我的最愛列表移除SKIN"
         }
         "You added a favorite paint"
@@ -270,6 +279,7 @@
     "it"    "Hai aggiunto {purple}{1} {default} alla tua collezione di skins preferite"
 		"pl"		"Dodałeś {purple}{1} {default} do swoich ulubionych skinów"
 		"es"		"Tu has agregado {purple}{1} {default}a tus pinturas favoritas"
+		"ru"		"Вы добавили {purple}{1} {default}в избранные раскраски"
 		"zho"       "你新增了 {purple}{1} {default}到你的最愛列表"
         }
         "You removed a favorite paint"
@@ -279,6 +289,7 @@
     "it""		"hai rimosso la skin{purple}{1} {default} dall'elenco delle tue preferite"
 		"pl"        "Usunąłeś {purple}{1} {default} ze swoich ulubionych skinów"
 		"es"		"Tu has borrado {purple}{1} {default}de tus pinturas favoritas"
+		"ru"		"Вы удалили {purple}{1} {default}из избранных раскрасок"
 		"zho"       "你從你的最愛列表移除了 {purple}{1}"
         }
         "Select a paint from your favorites"
@@ -287,6 +298,7 @@
     "it"		"Seleziona una skin tra le tue preferite"
 		"pl"        "Wybierz skina z ulubionych"
 		"es"		"Selecciona una pintura de tus favoritas"
+		"ru"		"Выберите раскраску из избранных"
 		"zho"       "從最愛列表選擇SKIN"
         }
         "You dont have access to this paint"
@@ -295,6 +307,7 @@
     "it"    "Non hai accesso a questa skin"
 		"pl"        "Nie masz dostępu do tego skina"
 		"es"		"Tu no tienes acceso a esta pintura"
+		"ru"		"У вас нет доступа к этой раскраске"
 		"zho"       "你沒有使用這個SKIN的權限"
         }
 }
